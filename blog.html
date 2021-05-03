@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;500,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.comp.css">
+
+    <title>Aqui Pneus - BLOG</title>
+</head>
+
+
+<body>
+
+    <main id="page__blog">
+
+        <div class="main__content container">
+            <div class="text__intro">
+                <h1>Aqui Pneus na Mídia - Blog</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt sed ac magna vitae at dictumst
+                    tortor, quis viverra. Ullamcorper elementum nibh.</p>
+            </div>
+            <div class="blog__wrapper">
+
+                <a href="#" class=" blog__post">
+
+                    <div class="img__container">
+                        <img src="/assets/img/img(9).jpg" alt="carro">
+                    </div>
+
+                    <div class="text__container">
+                        <h2>Os 4 lançamentos de carros mais aguardados de 2021</h2>
+                        <p>Toyota, Honda, Volkswagen e Citroën preparam novidades de peso para esse novo ano, em
+                            diferentes segmentos. Para a Indústria automobilística.</p>
+                    </div>
+                    <div class="info">
+
+                        <img src="assets/img/img(10).jpg" alt="avatar">
+                        <span> Mateus Henrique</span>
+                        <span class="date">29 Março 2022</span>
+
+                    </div>
+                </a>
+
+                <a href="#" class=" blog__post">
+
+                    <div class="img__container">
+                        <img src="/assets/img/img(11).jpg" alt="carro">
+                    </div>
+
+                    <div class="text__container">
+                        <h2>Uso adequado do ar-condicionado no dia a dia</h2>
+                        <p>Apesar da limpeza do ar-condicionado ser indispensável, separamos algumas dicas para você
+                            fazer um bom uso do sistema de ar do seu veículo no dia a dia, otimizando sua eficiência e
+                            vida útil. Acompanhe!</p>
+                    </div>
+                    <div class="info">
+
+                        <img src="assets/img/avatar.png" alt="avatar">
+                        <span> Mateus Henrique</span>
+                        <span class="date">29 Março 2022</span>
+
+                    </div>
+                </a>
+
+                <a href="#" class=" blog__post">
+
+                    <div class="img__container">
+                        <img src="/assets/img/img(15).jpg" alt="carro">
+                    </div>
+
+                    <div class="text__container">
+                        <h2>Conheça quais são os 4 melhores carros populares</h2>
+                        <p>Em homenagem ao dia da Mulher, separamos os cinco modelos que
+                            são os queridinhos delas.</p>
+                    </div>
+                    <div class="info">
+
+                        <img src="assets/img/avatar.png" alt="avatar">
+                        <span> Mateus Henrique</span>
+                        <span class="date">29 Março 2022</span>
+
+                    </div>
+                </a>
+                <a href="#" class=" blog__post">
+
+                    <div class="img__container">
+                        <img src="/assets/img/img(14).jpg" alt="carro">
+                    </div>
+
+                    <div class="text__container">
+                        <h2>Lançamentos de carros em 2020: o que mudou após o coronavírus?</h2>
+                        <p>Confira os modelos que estavam previstos para serem lançados no primeiro semestre de 2020,
+                            mas que tiveram de ser adiados..</p>
+
+                    </div>
+                    <div class="info">
+
+                        <img src="assets/img/avatar.png" alt="avatar">
+                        <span> Mateus Henrique</span>
+                        <span class="date">29 Março 2022</span>
+
+                    </div>
+                </a>
+                <a href="#" class=" blog__post">
+
+                    <div class="img__container">
+                        <img src="/assets/img/img(12).jpg" alt="carro">
+                    </div>
+
+                    <div class="text__container">
+                        <h2>Colecionar carros antigos: um hobby nada barato</h2>
+                        <p>“Antigomobilismo” é o nome dado ao segmento de colecionar carros antigos. Primeiro de tudo,
+                            você precisa saber que isso requer uma série de regras e custos.</p>
+                    </div>
+                    <div class="info">
+
+                        <img src="assets/img/avatar.png" alt="avatar">
+                        <span> Mateus Henrique</span>
+                        <span class="date">29 Março 2022</span>
+
+                    </div>
+                </a>
+                <a href="#" class=" blog__post">
+
+                    <div class="img__container">
+                        <img src="/assets/img/img(9).jpg" alt="carro">
+                    </div>
+
+                    <div class="text__container">
+                        <h2>Conheça quais são os 4 melhores carros populares</h2>
+                        <p>Em homenagem ao dia da Mulher, separamos os cinco modelos que
+                            são os queridinhos delas.</p>
+                    </div>
+                    <div class="info">
+
+                        <img src="assets/img/avatar.png" alt="avatar">
+                        <span> Mateus Henrique</span>
+                        <span class="date">29 Março 2022</span>
+
+                    </div>
+                </a>
+
+
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!--  ⚐ JS Front   -->
+
+    <script>
+        const buttonsPagination = document.querySelectorAll(".pagination li")
+        buttonsPagination.forEach((i) => {
+            i.addEventListener("click", function (e) {
+
+                buttonsPagination.forEach(i => i.classList.remove("active"))
+                e.target.classList.add("active")
+            })
+        })
+    </script>
+    <script type="module" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
